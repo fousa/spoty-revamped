@@ -32,7 +32,8 @@ class ServiceClient: NSObject {
     // MARK: - Requests
     
     private func performLocalFetch(#URLString: String, completion: ServiceClientCompletion) {
-        let path = NSBundle.mainBundle().pathForResource(URLString, ofType: "json")!
+        var transformedURLString = (URLString as NSString).stringByReplacingOccurrencesOfString("/", withString: "-")
+        let path = NSBundle.mainBundle().pathForResource(transformedURLString, ofType: "json")!
         var parsedData: AnyObject? = nil
         if let data = NSData(contentsOfFile: path) {
             parsedData = NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil)

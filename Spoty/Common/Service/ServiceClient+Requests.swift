@@ -28,4 +28,19 @@ extension ServiceClient {
         }
     }
     
+    func fetchCompetition(competition: Competition, completion: ServiceClientCompletion) {
+        performFetch(URLString: "competitions/\(competition.key)") { response, error in
+            var competitionClasses: [CompetitionClass]?
+            if let rawCompetition: AnyObject = (response as? [String:AnyObject])?["competition"],
+                let rawClasses: AnyObject = (rawCompetition as? [String:AnyObject])?["classes"] {
+                    competitionClasses = [CompetitionClass]()
+                    for (key, rawClass) in rawClasses as! [String:[String:AnyObject]] {
+                        let competitionClass = CompetitionClass(key: key, name: rawClass["name"] as! String)
+                        competitionClasses?.append(competitionClass)
+                    }
+            }
+            completion(response: competitionClasses, error: error)
+        }
+    }
+    
 }

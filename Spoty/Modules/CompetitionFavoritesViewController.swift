@@ -33,6 +33,16 @@ class CompetitionFavoritesViewController: UIViewController {
         tableView.reloadData()
     }
     
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let controller = segue.destinationViewController as? CompetitionClassesViewController {
+            let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
+            let favorite = favorites![indexPath.row]
+            controller.competition = favorite.competition
+        }
+    }
+    
 }
 
 extension CompetitionFavoritesViewController: UITableViewDataSource {

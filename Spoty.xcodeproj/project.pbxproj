@@ -14,9 +14,11 @@
 		624FBC9D1B0CBB7F00FADE9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 624FBC9B1B0CBB7F00FADE9D /* LaunchScreen.xib */; };
 		627E7F8A1B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */; };
 		627E7F8D1B0CD94100E77680 /* ActionTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F8C1B0CD94100E77680 /* ActionTabBarController.swift */; };
+		627E7F8F1B0CDB9600E77680 /* CompetitionClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F8E1B0CDB9600E77680 /* CompetitionClassesViewController.swift */; };
+		627E7F911B0CDC8500E77680 /* CompetitionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F901B0CDC8500E77680 /* CompetitionClass.swift */; };
 		62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */; };
 		62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */; };
-		62F4FCFF1B0CBEC80047D4E9 /* Competition.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFA1B0CBEC80047D4E9 /* Competition.json */; };
+		62F4FCFF1B0CBEC80047D4E9 /* competitions-obgc2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */; };
 		62F4FD001B0CBEC80047D4E9 /* competitions.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFB1B0CBEC80047D4E9 /* competitions.json */; };
 		62F4FD011B0CBEC80047D4E9 /* Day.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFC1B0CBEC80047D4E9 /* Day.json */; };
 		62F4FD021B0CBEC80047D4E9 /* Filter.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFD1B0CBEC80047D4E9 /* Filter.json */; };
@@ -38,9 +40,11 @@
 		624FBC9C1B0CBB7F00FADE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionFavoritesViewController.swift; sourceTree = "<group>"; };
 		627E7F8C1B0CD94100E77680 /* ActionTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTabBarController.swift; sourceTree = "<group>"; };
+		627E7F8E1B0CDB9600E77680 /* CompetitionClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionClassesViewController.swift; sourceTree = "<group>"; };
+		627E7F901B0CDC8500E77680 /* CompetitionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionClass.swift; sourceTree = "<group>"; };
 		62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionSearchViewController.swift; sourceTree = "<group>"; };
 		62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
-		62F4FCFA1B0CBEC80047D4E9 /* Competition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Competition.json; sourceTree = "<group>"; };
+		62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "competitions-obgc2015.json"; sourceTree = "<group>"; };
 		62F4FCFB1B0CBEC80047D4E9 /* competitions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = competitions.json; sourceTree = "<group>"; };
 		62F4FCFC1B0CBEC80047D4E9 /* Day.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Day.json; sourceTree = "<group>"; };
 		62F4FCFD1B0CBEC80047D4E9 /* Filter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Filter.json; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 		62F4FCF41B0CBCD60047D4E9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				627E7F8E1B0CDB9600E77680 /* CompetitionClassesViewController.swift */,
 				627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */,
 				62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */,
 			);
@@ -157,7 +162,7 @@
 		62F4FCF91B0CBEC80047D4E9 /* Dummy */ = {
 			isa = PBXGroup;
 			children = (
-				62F4FCFA1B0CBEC80047D4E9 /* Competition.json */,
+				62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */,
 				62F4FCFB1B0CBEC80047D4E9 /* competitions.json */,
 				62F4FCFC1B0CBEC80047D4E9 /* Day.json */,
 				62F4FCFD1B0CBEC80047D4E9 /* Filter.json */,
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				62F4FD071B0CC1C20047D4E9 /* Competition.swift */,
+				627E7F901B0CDC8500E77680 /* CompetitionClass.swift */,
 				62F4FD121B0CCEC60047D4E9 /* Favorite.swift */,
 			);
 			path = Models;
@@ -276,7 +282,7 @@
 				624FBC9A1B0CBB7F00FADE9D /* Images.xcassets in Resources */,
 				62F4FD001B0CBEC80047D4E9 /* competitions.json in Resources */,
 				62F4FD031B0CBEC80047D4E9 /* Pilots.json in Resources */,
-				62F4FCFF1B0CBEC80047D4E9 /* Competition.json in Resources */,
+				62F4FCFF1B0CBEC80047D4E9 /* competitions-obgc2015.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +346,9 @@
 				624FBC931B0CBB7F00FADE9D /* AppDelegate.swift in Sources */,
 				62F4FD131B0CCEC60047D4E9 /* Favorite.swift in Sources */,
 				62F4FD081B0CC1C20047D4E9 /* Competition.swift in Sources */,
+				627E7F8F1B0CDB9600E77680 /* CompetitionClassesViewController.swift in Sources */,
 				62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */,
+				627E7F911B0CDC8500E77680 /* CompetitionClass.swift in Sources */,
 				62F4FD111B0CCE7B0047D4E9 /* Spoty.xcdatamodeld in Sources */,
 				62F4FD051B0CC1910047D4E9 /* ServiceClient+Requests.swift in Sources */,
 				62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */,

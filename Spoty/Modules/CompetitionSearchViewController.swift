@@ -40,6 +40,15 @@ class CompetitionSearchViewController: UIViewController {
             self.refreshControl.endRefreshing()
         }
     }
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let controller = segue.destinationViewController as? CompetitionClassesViewController {
+            let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
+            controller.competition = competitions![indexPath.row]
+        }
+    }
 
 }
 

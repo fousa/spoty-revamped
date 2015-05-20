@@ -24,13 +24,13 @@ class CompetitionClassesViewController: UITableViewController {
         
         refreshControl?.addTarget(self, action: "reloadData", forControlEvents: .ValueChanged)
         
+        SVProgressHUD.show()
         reloadData()
     }
     
     // MARK: - Data
     
     func reloadData() {
-        SVProgressHUD.show()
         ServiceClient().fetchCompetition(competition) { (response, error) -> () in
             SVProgressHUD.dismiss()
             

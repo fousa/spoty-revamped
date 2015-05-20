@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 
 class CompetitionDaysViewController: UITableViewController {
     
@@ -24,21 +23,21 @@ class CompetitionDaysViewController: UITableViewController {
         self.title = competitionClass.name
         
         refreshControl?.addTarget(self, action: "reloadData", forControlEvents: .ValueChanged)
-        
-        reloadData()
     }
     
     // MARK: - Data
     
     func reloadData() {
-//        SVProgressHUD.show()
-//        ServiceClient().fetchCompetition(competition) { (response, error) -> () in
-//            SVProgressHUD.dismiss()
-//            
-//            self.competition.classes = response as? [CompetitionClass]
-//            self.tableView.reloadData()
-//            self.refreshControl?.endRefreshing()
-//        }
+        ServiceClient().fetchCompetition(competition) { (response, error) -> () in
+            self.competition.classes = response as? [CompetitionClass]
+            if let competitionClasses = self.competition.classes {
+                self.competitionClass = competitionClasses.filter {
+                    return $0.key == self.competitionClass.key
+                }.first!
+            }
+            self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
+        }
     }
     
 }

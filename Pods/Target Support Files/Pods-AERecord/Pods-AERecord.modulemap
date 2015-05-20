@@ -1,0 +1,6 @@
+framework module AERecord {
+  umbrella header "Pods-AERecord-umbrella.h"
+
+  export *
+  module * { export * }
+}

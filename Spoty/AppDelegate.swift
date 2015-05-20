@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AERecord
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Setup core data.
+        AERecord.loadCoreDataStack()
+        
         return true
     }
 

@@ -18,6 +18,11 @@ class Favorite: NSManagedObject {
     @NSManaged var key: NSString?
     @NSManaged var name: NSString?
     
+    class func all() -> [Favorite] {
+        let descriptors = NSSortDescriptor(key: "name", ascending: true)
+        return Favorite.all(sortDescriptors: [descriptors]) as! [Favorite]
+    }
+    
     class func favorite(#competition: Competition) {
         if let model = Favorite.firstOrCreateWithAttribute("key", value: competition.key) as? Favorite {
             model.name = competition.name
@@ -34,6 +39,11 @@ class Favorite: NSManagedObject {
     
     class func exists(#competition: Competition) -> Bool {
         return Favorite.firstWithAttribute("key", value: competition.key) as? Favorite != nil
+    }
+    
+    func unfavorite() {
+        delete()
+        AERecord.saveContextAndWait()
     }
     
 }

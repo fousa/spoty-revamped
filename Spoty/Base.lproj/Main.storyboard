@@ -33,6 +33,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="1jo-Bp-3jS" kind="relationship" relationship="viewControllers" id="Zko-fT-9S0"/>
+                        <segue destination="A00-cM-7Lg" kind="relationship" relationship="viewControllers" id="GPX-K9-grK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQa-Ev-Rvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,10 +80,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Drg-gP-ZT8" firstAttribute="top" secondItem="Er2-Tr-P3V" secondAttribute="top" id="2hZ-Zf-N9C"/>
                             <constraint firstItem="Kzs-mV-1Z0" firstAttribute="top" secondItem="Drg-gP-ZT8" secondAttribute="bottom" id="G6c-oQ-UFW"/>
                             <constraint firstItem="Drg-gP-ZT8" firstAttribute="leading" secondItem="Er2-Tr-P3V" secondAttribute="leading" id="NI1-ig-QjE"/>
                             <constraint firstAttribute="trailing" secondItem="Drg-gP-ZT8" secondAttribute="trailing" id="n6n-Ar-QiB"/>
-                            <constraint firstItem="Drg-gP-ZT8" firstAttribute="top" secondItem="Er2-Tr-P3V" secondAttribute="top" id="wad-XN-eLK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="lLK-T2-12e"/>
@@ -92,7 +93,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2o-qu-fmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413" y="346"/>
+            <point key="canvasLocation" x="1437" y="12"/>
+        </scene>
+        <!--Competition Favorites View Controller-->
+        <scene sceneID="SvV-9P-Tmh">
+            <objects>
+                <viewController id="A00-cM-7Lg" customClass="CompetitionFavoritesViewController" customModule="Spoty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p2z-mS-vlN"/>
+                        <viewControllerLayoutGuide type="bottom" id="RAl-oH-6mT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BRJ-xQ-XQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fTN-K7-hwf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="53W-pE-QWp" style="IBUITableViewCellStyleDefault" id="PUD-Ns-xx8">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PUD-Ns-xx8" id="nKl-Kw-fl5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53W-pE-QWp">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="A00-cM-7Lg" id="cRX-nJ-yEs"/>
+                                    <outlet property="delegate" destination="A00-cM-7Lg" id="98w-Z6-GTN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fTN-K7-hwf" firstAttribute="top" secondItem="BRJ-xQ-XQ6" secondAttribute="top" id="Xkk-KK-mS7"/>
+                            <constraint firstItem="RAl-oH-6mT" firstAttribute="top" secondItem="fTN-K7-hwf" secondAttribute="bottom" id="gXc-uj-6jB"/>
+                            <constraint firstItem="fTN-K7-hwf" firstAttribute="leading" secondItem="BRJ-xQ-XQ6" secondAttribute="leading" id="vUT-dx-x5I"/>
+                            <constraint firstAttribute="trailing" secondItem="fTN-K7-hwf" secondAttribute="trailing" id="zPQ-4v-tmj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="k3j-8M-TYC"/>
+                    <connections>
+                        <outlet property="tableView" destination="fTN-K7-hwf" id="AbI-ZL-Lpg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBW-P3-y1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437" y="698"/>
         </scene>
     </scenes>
 </document>

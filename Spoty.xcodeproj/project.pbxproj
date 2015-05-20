@@ -53,6 +53,8 @@
 			isa = PBXGroup;
 			children = (
 				624FBC921B0CBB7F00FADE9D /* AppDelegate.swift */,
+				62F4FCF21B0CBCCF0047D4E9 /* Common */,
+				62F4FCF41B0CBCD60047D4E9 /* Modules */,
 				624FBC901B0CBB7F00FADE9D /* Supporting Files */,
 				624FBCB21B0CBB8B00FADE9D /* UI */,
 			);
@@ -75,6 +77,28 @@
 				624FBC9B1B0CBB7F00FADE9D /* LaunchScreen.xib */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		62F4FCF21B0CBCCF0047D4E9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				62F4FCF31B0CBCCF0047D4E9 /* Service */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		62F4FCF31B0CBCCF0047D4E9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		62F4FCF41B0CBCD60047D4E9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

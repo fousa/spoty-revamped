@@ -22,7 +22,7 @@ class CompetitionFavoritesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         reloadData()
     }
     
@@ -58,7 +58,6 @@ extension CompetitionFavoritesViewController: UITableViewDelegate {
                 favorite.unfavorite()
                 self.favorites?.removeAtIndex(indexPath.row)
                 self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-//                self.tableView.setEditing(false, animated: true)
             }]
         } else {
             return nil

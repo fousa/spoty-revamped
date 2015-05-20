@@ -108,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fTN-K7-hwf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="53W-pE-QWp" style="IBUITableViewCellStyleDefault" id="PUD-Ns-xx8">
@@ -135,7 +135,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fTN-K7-hwf" firstAttribute="top" secondItem="BRJ-xQ-XQ6" secondAttribute="top" id="Xkk-KK-mS7"/>
+                            <constraint firstItem="fTN-K7-hwf" firstAttribute="top" secondItem="p2z-mS-vlN" secondAttribute="bottom" id="DCe-VY-beD"/>
                             <constraint firstItem="RAl-oH-6mT" firstAttribute="top" secondItem="fTN-K7-hwf" secondAttribute="bottom" id="gXc-uj-6jB"/>
                             <constraint firstItem="fTN-K7-hwf" firstAttribute="leading" secondItem="BRJ-xQ-XQ6" secondAttribute="leading" id="vUT-dx-x5I"/>
                             <constraint firstAttribute="trailing" secondItem="fTN-K7-hwf" secondAttribute="trailing" id="zPQ-4v-tmj"/>

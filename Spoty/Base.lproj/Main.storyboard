@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="720" y="346"/>
         </scene>
-        <!--Competition Search Table View Controller-->
+        <!--Competition Search View Controller-->
         <scene sceneID="s6X-AY-R7R">
             <objects>
-                <viewController id="1jo-Bp-3jS" customClass="CompetitionSearchTableViewController" customModule="Spoty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1jo-Bp-3jS" customClass="CompetitionSearchViewController" customModule="Spoty" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mYU-yL-BFe"/>
                         <viewControllerLayoutGuide type="bottom" id="Kzs-mV-1Z0"/>

@@ -61,3 +61,17 @@ extension CompetitionSearchViewController: UITableViewDataSource {
     }
     
 }
+
+extension CompetitionSearchViewController: UITableViewDelegate {
+
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
+        let favoriteAction = UITableViewRowAction(style: .Normal, title: "Favorite") { action, indexPath in
+            
+        }
+        return [favoriteAction]
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+}

@@ -1,5 +1,5 @@
 //
-//  CompetitionClass.swift
+//  CompetitionDay.swift
 //  Spoty
 //
 //  Created by Jelle Vandenbeeck on 20/05/15.
@@ -8,20 +8,22 @@
 
 import Foundation
 
-class CompetitionClass {
+class CompetitionDay {
     
     // MARK: - Properties
     
     var key: String
     var name: String
-    
-    var days: [CompetitionDay]?
+    var date: String
+    var sortKey: String
     
     // MARK: - Init
     
-    init(key: String, name: String) {
+    init(key: String, name: String, date: String, sortKey: String) {
         self.key = key
         self.name = name
+        self.date = date
+        self.sortKey = sortKey
     }
     
 }

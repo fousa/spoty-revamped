@@ -40,6 +40,16 @@ class CompetitionClassesViewController: UITableViewController {
         }
     }
     
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let controller = segue.destinationViewController as? CompetitionDaysViewController {
+            let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
+            controller.competition = competition
+            controller.competitionClass = competition.classes![indexPath.row]
+        }
+    }
+    
 }
 
 extension CompetitionClassesViewController: UITableViewDataSource {

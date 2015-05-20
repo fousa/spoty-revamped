@@ -28,6 +28,8 @@
 		62F4FD111B0CCE7B0047D4E9 /* Spoty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FD0F1B0CCE7B0047D4E9 /* Spoty.xcdatamodeld */; };
 		62F4FD131B0CCEC60047D4E9 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FD121B0CCEC60047D4E9 /* Favorite.swift */; };
 		62F4FD151B0CCED70047D4E9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F4FD141B0CCED70047D4E9 /* CoreData.framework */; };
+		62FD20861B0CE2B50044E59E /* CompetitionDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FD20851B0CE2B50044E59E /* CompetitionDaysViewController.swift */; };
+		62FD20881B0CE34E0044E59E /* CompetitionDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FD20871B0CE34E0044E59E /* CompetitionDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		62F4FD121B0CCEC60047D4E9 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		62F4FD141B0CCED70047D4E9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		62FD20811B0CE1FE0044E59E /* Spoty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Spoty-Bridging-Header.h"; path = "Common/Spoty-Bridging-Header.h"; sourceTree = "<group>"; };
+		62FD20851B0CE2B50044E59E /* CompetitionDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionDaysViewController.swift; sourceTree = "<group>"; };
+		62FD20871B0CE34E0044E59E /* CompetitionDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionDay.swift; sourceTree = "<group>"; };
 		70ADA096831A32B330D1D606 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E4075C5215B2DCE45A16E110 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				627E7F8E1B0CDB9600E77680 /* CompetitionClassesViewController.swift */,
+				62FD20851B0CE2B50044E59E /* CompetitionDaysViewController.swift */,
 				627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */,
 				62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */,
 			);
@@ -178,6 +183,7 @@
 			children = (
 				62F4FD071B0CC1C20047D4E9 /* Competition.swift */,
 				627E7F901B0CDC8500E77680 /* CompetitionClass.swift */,
+				62FD20871B0CE34E0044E59E /* CompetitionDay.swift */,
 				62F4FD121B0CCEC60047D4E9 /* Favorite.swift */,
 			);
 			path = Models;
@@ -352,7 +358,9 @@
 				62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */,
 				627E7F911B0CDC8500E77680 /* CompetitionClass.swift in Sources */,
 				62F4FD111B0CCE7B0047D4E9 /* Spoty.xcdatamodeld in Sources */,
+				62FD20861B0CE2B50044E59E /* CompetitionDaysViewController.swift in Sources */,
 				62F4FD051B0CC1910047D4E9 /* ServiceClient+Requests.swift in Sources */,
+				62FD20881B0CE34E0044E59E /* CompetitionDay.swift in Sources */,
 				62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -36,6 +36,14 @@ extension ServiceClient {
                     competitionClasses = [CompetitionClass]()
                     for (key, rawClass) in rawClasses as! [String:[String:AnyObject]] {
                         let competitionClass = CompetitionClass(key: key, name: rawClass["name"] as! String)
+                        if let rawDays = rawClass["days"] as? [String:[String:String]] {
+                            competitionClass.days = [CompetitionDay]()
+                            for (key, rawDay) in rawDays {
+                                let competitionDay = CompetitionDay(key: rawDay["key"]!, name: rawDay["name"]!, date: rawDay["date"]!, sortKey: key)
+                                competitionClass.days?.append(competitionDay)
+                            }
+                            sort(&competitionClass.days!) { $0.sortKey < $1.sortKey }
+                        }
                         competitionClasses?.append(competitionClass)
                     }
             }

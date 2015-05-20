@@ -27,10 +27,6 @@ class CompetitionSearchViewController: UIViewController {
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: "reloadData", forControlEvents: .ValueChanged)
         tableView.addSubview(refreshControl)
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
         
         reloadData()
     }

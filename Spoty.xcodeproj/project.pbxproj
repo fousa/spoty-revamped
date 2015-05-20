@@ -13,6 +13,7 @@
 		624FBC9A1B0CBB7F00FADE9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624FBC991B0CBB7F00FADE9D /* Images.xcassets */; };
 		624FBC9D1B0CBB7F00FADE9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 624FBC9B1B0CBB7F00FADE9D /* LaunchScreen.xib */; };
 		627E7F8A1B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */; };
+		627E7F8D1B0CD94100E77680 /* ActionTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F8C1B0CD94100E77680 /* ActionTabBarController.swift */; };
 		62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */; };
 		62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */; };
 		62F4FCFF1B0CBEC80047D4E9 /* Competition.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFA1B0CBEC80047D4E9 /* Competition.json */; };
@@ -36,6 +37,7 @@
 		624FBC991B0CBB7F00FADE9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		624FBC9C1B0CBB7F00FADE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionFavoritesViewController.swift; sourceTree = "<group>"; };
+		627E7F8C1B0CD94100E77680 /* ActionTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTabBarController.swift; sourceTree = "<group>"; };
 		62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionSearchViewController.swift; sourceTree = "<group>"; };
 		62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
 		62F4FCFA1B0CBEC80047D4E9 /* Competition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Competition.json; sourceTree = "<group>"; };
@@ -115,9 +117,18 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		627E7F8B1B0CD93600E77680 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				627E7F8C1B0CD94100E77680 /* ActionTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		62F4FCF21B0CBCCF0047D4E9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				627E7F8B1B0CD93600E77680 /* Controllers */,
 				62F4FD0E1B0CCE700047D4E9 /* Data */,
 				62F4FD061B0CC1B90047D4E9 /* Models */,
 				62F4FCF31B0CBCCF0047D4E9 /* Service */,
@@ -324,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627E7F8D1B0CD94100E77680 /* ActionTabBarController.swift in Sources */,
 				627E7F8A1B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift in Sources */,
 				624FBC931B0CBB7F00FADE9D /* AppDelegate.swift in Sources */,
 				62F4FD131B0CCEC60047D4E9 /* Favorite.swift in Sources */,

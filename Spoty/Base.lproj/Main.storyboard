@@ -23,7 +23,7 @@
         <!--Soaringspot-->
         <scene sceneID="Hf1-DF-CC4">
             <objects>
-                <tabBarController id="oaq-gi-Dg6" sceneMemberID="viewController">
+                <tabBarController id="oaq-gi-Dg6" customClass="ActionTabBarController" customModule="Spoty" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Soaringspot" id="b4l-XT-EGg"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="RbW-js-W0Z">

@@ -40,6 +40,19 @@ class CompetitionDaysViewController: UITableViewController {
         }
     }
     
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let navigationController = segue.destinationViewController as? UINavigationController, let controller = navigationController.topViewController as? CompetitionPilotsViewController {
+            controller.competition = competition
+            controller.competitionClass = competitionClass
+        }
+    }
+    
+    // MARK: - Segue
+    
+    @IBAction func unwindToClassesViewController(segue: UIStoryboardSegue) {}
+    
 }
 
 extension CompetitionDaysViewController: UITableViewDataSource {

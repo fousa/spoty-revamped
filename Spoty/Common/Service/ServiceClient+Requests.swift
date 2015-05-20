@@ -51,4 +51,33 @@ extension ServiceClient {
         }
     }
     
+    // MARK: - Pilots
+    
+    func fetchPilots(competition: Competition, competitionClass: CompetitionClass, completion: ServiceClientCompletion) {
+        performFetch(URLString: "competitions/\(competition.key)/classes/\(competitionClass.key)/pilots") { response, error in
+            var pilots: [Pilot]?
+            if let rawPilots: AnyObject = (response as? [String:AnyObject])?["pilots"] {
+                    pilots = [Pilot]()
+                    for rawPilot in rawPilots as! [[String:AnyObject]] {
+                        var pilot = Pilot(name: rawPilot["info"]!["pilot"] as! String, sortKey: (rawPilot["info"]!["#"] as! NSNumber).stringValue)
+                        pilot.glider = rawPilot["info"]!["glider"] as? String
+                        pilot.cn = rawPilot["info"]!["cn"] as? String
+                        pilot.team = rawPilot["info"]!["team"] as? String
+                        pilot.total = rawPilot["info"]!["total"] as? String
+                        if let rawResults = rawPilot["results"] as? [String:String] {
+                            pilot.results = [PilotResult]()
+                            for (key, value) in rawResults {
+                                let result = PilotResult(day: key, points: value)
+                                pilot.results?.append(result)
+                            }
+                            sort(&pilot.results!) { $0.day < $1.day }
+                        }
+                        sort(&pilots!) { $0.sortKey < $1.sortKey }
+                        pilots?.append(pilot)
+                    }
+            }
+            completion(response: pilots, error: error)
+        }
+    }
+    
 }

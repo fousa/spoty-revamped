@@ -1,0 +1,326 @@
+{
+    "pilots": [
+               {
+               "info": {
+               "#": 1,
+               "total": "1867",
+               "cn": "FS",
+               "pilot": "Daan Spruyt",
+               "team": "BEL/VZP",
+               "glider": "LS 6"
+               },
+               "results": {
+               "1": "1",
+               "2": "9(867)"
+               }
+               },
+               {
+               "info": {
+               "#": 3,
+               "total": "1804",
+               "cn": "CM",
+               "pilot": "Dennis Huybreckx",
+               "team": "BEL/KACK",
+               "glider": "LS 8"
+               },
+               "results": {
+               "1": "4(927)",
+               "2": "7(877)"
+               }
+               },
+               {
+               "info": {
+               "#": 5,
+               "total": "1753",
+               "cn": "1R",
+               "pilot": "Steven Raimond",
+               "team": "NED/ GeZC",
+               "glider": "ASW 27"
+               },
+               "results": {
+               "1": "12(753)",
+               "2": "1"
+               }
+               },
+               {
+               "info": {
+               "#": 7,
+               "total": "1736",
+               "cn": "KG",
+               "pilot": "Bert Schmelzer jr.",
+               "team": "BEL/SGKA",
+               "glider": "Discus 2a"
+               },
+               "results": {
+               "1": "13(741)",
+               "2": "2(995)"
+               }
+               },
+               {
+               "info": {
+               "#": 9,
+               "total": "1722",
+               "cn": "2S",
+               "pilot": "Sjaak Selen",
+               "team": "NED/ VZC",
+               "glider": "Discus 2a"
+               },
+               "results": {
+               "1": "5(900)",
+               "2": "11(822)"
+               }
+               },
+               {
+               "info": {
+               "#": 11,
+               "total": "1687",
+               "cn": "WW",
+               "pilot": "Jaap Horsten",
+               "team": "NED/ DSA",
+               "glider": "LS 6a"
+               },
+               "results": {
+               "1": "9(786)",
+               "2": "4(901)"
+               }
+               },
+               {
+               "info": {
+               "#": 13,
+               "total": "1448",
+               "cn": "FU",
+               "pilot": "Pieter Lievens",
+               "team": "BEL/VZP",
+               "glider": "Std. Cirrus"
+               },
+               "results": {
+               "1": "16(701)",
+               "2": "14(747)"
+               }
+               },
+               {
+               "info": {
+               "#": 15,
+               "total": "1234",
+               "cn": "2T",
+               "pilot": "Tjeerd Reitsma",
+               "team": "NED/ GeZC",
+               "glider": "Duo Discus XT"
+               },
+               "results": {
+               "1": "21(521)",
+               "2": "15(713)"
+               }
+               },
+               {
+               "info": {
+               "#": 17,
+               "total": "1144",
+               "cn": "XL",
+               "pilot": "Stijn, Rik / Vanden Boer , Vanden Boer",
+               "team": "BEL/Albatros",
+               "glider": "Duo Discus XLT"
+               },
+               "results": {
+               "1": "15(718)",
+               "2": "17(426)"
+               }
+               },
+               {
+               "info": {
+               "#": 19,
+               "total": "1121",
+               "cn": "YB",
+               "pilot": "Ronald Deerenberg",
+               "team": "NED/ DSA",
+               "glider": "LS 6"
+               },
+               "results": {
+               "1": "11(760)",
+               "2": "20(361)"
+               }
+               },
+               {
+               "info": {
+               "#": 21,
+               "total": "884",
+               "cn": "PP",
+               "pilot": "Nick Redant",
+               "team": "BEL/LP",
+               "glider": "DG 400/17"
+               },
+               "results": {
+               "1": "21(521)",
+               "2": "19(363)"
+               }
+               },
+               {
+               "info": {
+               "#": 23,
+               "total": "0",
+               "cn": "CG",
+               "pilot": "Makoto Ichikawa",
+               "team": "JAP/ ACTION",
+               "glider": "Discus 2a"
+               },
+               "results": {
+               "1": "23(0)",
+               "2": "23(0)"
+               }
+               },
+               {
+               "info": {
+               "#": 2,
+               "total": "1812",
+               "cn": "LT",
+               "pilot": "Jeroen Jennen",
+               "team": "BEL/KACK",
+               "glider": "LS 8"
+               },
+               "results": {
+               "1": "3(936)",
+               "2": "8(876)"
+               }
+               },
+               {
+               "info": {
+               "#": 4,
+               "total": "1772",
+               "cn": "5F",
+               "pilot": "Patrick Stouffs",
+               "team": "BEL/ACRA",
+               "glider": "LS 8"
+               },
+               "results": {
+               "1": "6(890)",
+               "2": "5(882)"
+               }
+               },
+               {
+               "info": {
+               "#": 6,
+               "total": "1747",
+               "cn": "YU",
+               "pilot": "Jef Kell",
+               "team": "BEL/KACK",
+               "glider": "Discus 2T"
+               },
+               "results": {
+               "1": "2(976)",
+               "2": "13(771)"
+               }
+               },
+               {
+               "info": {
+               "#": 8,
+               "total": "1730",
+               "cn": "SR",
+               "pilot": "Robbie Seton",
+               "team": "NED/ KACK",
+               "glider": "LS 8"
+               },
+               "results": {
+               "1": "7(852)",
+               "2": "6(878)"
+               }
+               },
+               {
+               "info": {
+               "#": 10,
+               "total": "1692",
+               "cn": "JH",
+               "pilot": "Jose Jaime",
+               "team": "BEL/RVA",
+               "glider": "LS 8"
+               },
+               "results": {
+               "1": "14(735)",
+               "2": "3(957)"
+               }
+               },
+               {
+               "info": {
+               "#": 12,
+               "total": "1637",
+               "cn": "MM",
+               "pilot": "Andre Emmanuel Litt",
+               "team": "BEL/CNVV",
+               "glider": "Ventus 2 Bx"
+               },
+               "results": {
+               "1": "10(783)",
+               "2": "10(854)"
+               }
+               },
+               {
+               "info": {
+               "#": 14,
+               "total": "1392",
+               "cn": "52",
+               "pilot": "Yves Ruymen",
+               "team": "BEL/KVDW",
+               "glider": "Discus 2b"
+               },
+               "results": {
+               "1": "20(593)",
+               "2": "12(799)"
+               }
+               },
+               {
+               "info": {
+               "#": 16,
+               "total": "1157",
+               "cn": "21",
+               "pilot": "Tijl Schmelzer",
+               "team": "BEL/SGKA",
+               "glider": "Discus 2ax"
+               },
+               "results": {
+               "1": "8(807)",
+               "2": "21(350)"
+               }
+               },
+               {
+               "info": {
+               "#": 18,
+               "total": "1132",
+               "cn": "E12",
+               "pilot": "Jan-Willem, Jasper / van Doorn, Keuper",
+               "team": "NED/ GeZC",
+               "glider": "Duo Discus XLT"
+               },
+               "results": {
+               "1": "17(655)",
+               "2": "16(477)"
+               }
+               },
+               {
+               "info": {
+               "#": 20,
+               "total": "1064",
+               "cn": "TH",
+               "pilot": "Tim Huybreckx",
+               "team": "BEL/KACK",
+               "glider": "Discus 2T"
+               },
+               "results": {
+               "1": "18(638)",
+               "2": "17(426)"
+               }
+               },
+               {
+               "info": {
+               "#": 22,
+               "total": "778",
+               "cn": "ED",
+               "pilot": "Emiel de Wachter",
+               "team": "BEL/ KACK",
+               "glider": "LS 8"
+               },
+               "results": {
+               "1": "19(636)",
+               "2": "22(142)"
+               }
+               }
+               ]
+}

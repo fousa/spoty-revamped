@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class CompetitionClassesViewController: UITableViewController {
     
@@ -29,7 +30,10 @@ class CompetitionClassesViewController: UITableViewController {
     // MARK: - Data
     
     func reloadData() {
+        SVProgressHUD.show()
         ServiceClient().fetchCompetition(competition) { (response, error) -> () in
+            SVProgressHUD.dismiss()
+            
             self.competition.classes = response as? [CompetitionClass]
             self.tableView.reloadData()
             self.refreshControl?.endRefreshing()

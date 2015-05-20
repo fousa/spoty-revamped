@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class CompetitionSearchViewController: UIViewController {
     
@@ -28,6 +29,7 @@ class CompetitionSearchViewController: UIViewController {
         refreshControl.addTarget(self, action: "reloadData", forControlEvents: .ValueChanged)
         tableView.addSubview(refreshControl)
         
+        SVProgressHUD.show()
         reloadData()
     }
     
@@ -35,6 +37,8 @@ class CompetitionSearchViewController: UIViewController {
     
     func reloadData() {
         ServiceClient().fetchRecentCompetitions { (response, error) -> () in
+            SVProgressHUD.dismiss()
+            
             self.competitions = response as? [Competition]
             self.tableView.reloadData()
             self.refreshControl.endRefreshing()

@@ -7,4 +7,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 link_with 'Spoty'
 
-pod 'AERecord', '~> 1.0'
+pod 'AERecord',      '~> 1.0'
+pod 'SVProgressHUD', '~> 1.1'

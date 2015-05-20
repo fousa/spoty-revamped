@@ -20,6 +20,9 @@
 		62F4FD031B0CBEC80047D4E9 /* Pilots.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFE1B0CBEC80047D4E9 /* Pilots.json */; };
 		62F4FD051B0CC1910047D4E9 /* ServiceClient+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FD041B0CC1910047D4E9 /* ServiceClient+Requests.swift */; };
 		62F4FD081B0CC1C20047D4E9 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FD071B0CC1C20047D4E9 /* Competition.swift */; };
+		62F4FD111B0CCE7B0047D4E9 /* Spoty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FD0F1B0CCE7B0047D4E9 /* Spoty.xcdatamodeld */; };
+		62F4FD131B0CCEC60047D4E9 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FD121B0CCEC60047D4E9 /* Favorite.swift */; };
+		62F4FD151B0CCED70047D4E9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F4FD141B0CCED70047D4E9 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		62F4FCFE1B0CBEC80047D4E9 /* Pilots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pilots.json; sourceTree = "<group>"; };
 		62F4FD041B0CC1910047D4E9 /* ServiceClient+Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceClient+Requests.swift"; sourceTree = "<group>"; };
 		62F4FD071B0CC1C20047D4E9 /* Competition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
+		62F4FD101B0CCE7B0047D4E9 /* Spoty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spoty.xcdatamodel; sourceTree = "<group>"; };
+		62F4FD121B0CCEC60047D4E9 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		62F4FD141B0CCED70047D4E9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F4FD151B0CCED70047D4E9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,7 @@
 		624FBC901B0CBB7F00FADE9D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				62F4FD161B0CCEE30047D4E9 /* Frameworks */,
 				62F4FCF91B0CBEC80047D4E9 /* Dummy */,
 				624FBC911B0CBB7F00FADE9D /* Info.plist */,
 			);
@@ -101,6 +109,7 @@
 		62F4FCF21B0CBCCF0047D4E9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				62F4FD0E1B0CCE700047D4E9 /* Data */,
 				62F4FD061B0CC1B90047D4E9 /* Models */,
 				62F4FCF31B0CBCCF0047D4E9 /* Service */,
 			);
@@ -140,8 +149,25 @@
 			isa = PBXGroup;
 			children = (
 				62F4FD071B0CC1C20047D4E9 /* Competition.swift */,
+				62F4FD121B0CCEC60047D4E9 /* Favorite.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		62F4FD0E1B0CCE700047D4E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				62F4FD0F1B0CCE7B0047D4E9 /* Spoty.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		62F4FD161B0CCEE30047D4E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62F4FD141B0CCED70047D4E9 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,8 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				624FBC931B0CBB7F00FADE9D /* AppDelegate.swift in Sources */,
+				62F4FD131B0CCEC60047D4E9 /* Favorite.swift in Sources */,
 				62F4FD081B0CC1C20047D4E9 /* Competition.swift in Sources */,
 				62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */,
+				62F4FD111B0CCE7B0047D4E9 /* Spoty.xcdatamodeld in Sources */,
 				62F4FD051B0CC1910047D4E9 /* ServiceClient+Requests.swift in Sources */,
 				62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */,
 			);
@@ -379,6 +407,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		62F4FD0F1B0CCE7B0047D4E9 /* Spoty.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				62F4FD101B0CCE7B0047D4E9 /* Spoty.xcdatamodel */,
+			);
+			currentVersion = 62F4FD101B0CCE7B0047D4E9 /* Spoty.xcdatamodel */;
+			path = Spoty.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 624FBC851B0CBB7F00FADE9D /* Project object */;
 }

@@ -46,12 +46,15 @@ class CompetitionDaysViewController: UITableViewController {
         if let navigationController = segue.destinationViewController as? UINavigationController, let controller = navigationController.topViewController as? CompetitionPilotsViewController {
             controller.competition = competition
             controller.competitionClass = competitionClass
+            enabledLandscape()
         }
     }
     
     // MARK: - Segue
     
-    @IBAction func unwindToClassesViewController(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToClassesViewController(segue: UIStoryboardSegue) {
+        disableLandscape()
+    }
     
 }
 

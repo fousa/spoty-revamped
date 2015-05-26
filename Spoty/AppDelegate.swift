@@ -13,12 +13,19 @@ import AERecord
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var landscapeEnabled: Bool = false
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Setup core data.
         AERecord.loadCoreDataStack()
         
         return true
+    }
+    
+    // MARK: - Orientation
+    
+    func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> Int {
+        return Int(landscapeEnabled ? UIInterfaceOrientationMask.All.rawValue : UIInterfaceOrientationMask.Portrait.rawValue)
     }
 
 }

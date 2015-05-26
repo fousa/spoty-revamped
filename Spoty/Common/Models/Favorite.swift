@@ -26,7 +26,7 @@ class Favorite: NSManagedObject {
     
     class func all() -> [Favorite] {
         let descriptors = NSSortDescriptor(key: "name", ascending: true)
-        return Favorite.all(sortDescriptors: [descriptors]) as! [Favorite]
+        return (Favorite.all(sortDescriptors: [descriptors]) as? [Favorite]) ?? [Favorite]()
     }
     
     class func exists(#competition: Competition) -> Bool {

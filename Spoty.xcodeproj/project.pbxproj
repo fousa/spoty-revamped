@@ -22,6 +22,8 @@
 		629830671B14AADC00897084 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629830661B14AADC00897084 /* PilotViewController.swift */; };
 		629830691B14AD9E00897084 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629830681B14AD9E00897084 /* Macros.swift */; };
 		6298306D1B14B13E00897084 /* PilotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298306C1B14B13E00897084 /* PilotTableViewCell.swift */; };
+		629830701B14B83500897084 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298306F1B14B83500897084 /* DayViewController.swift */; };
+		629830721B14B88300897084 /* DayDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629830711B14B88300897084 /* DayDailyViewController.swift */; };
 		62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */; };
 		62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */; };
 		62F4FCFF1B0CBEC80047D4E9 /* competitions-obgc2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */; };
@@ -56,6 +58,8 @@
 		629830661B14AADC00897084 /* PilotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
 		629830681B14AD9E00897084 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
 		6298306C1B14B13E00897084 /* PilotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotTableViewCell.swift; sourceTree = "<group>"; };
+		6298306F1B14B83500897084 /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		629830711B14B88300897084 /* DayDailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDailyViewController.swift; sourceTree = "<group>"; };
 		62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionSearchViewController.swift; sourceTree = "<group>"; };
 		62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
 		62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "competitions-obgc2015.json"; sourceTree = "<group>"; };
@@ -165,6 +169,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		6298306E1B14B70A00897084 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				629830711B14B88300897084 /* DayDailyViewController.swift */,
+				6298306F1B14B83500897084 /* DayViewController.swift */,
+			);
+			name = Day;
+			sourceTree = "<group>";
+		};
 		62F4FCF21B0CBCCF0047D4E9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +206,7 @@
 				62FD20851B0CE2B50044E59E /* CompetitionDaysViewController.swift */,
 				627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */,
 				62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */,
+				6298306E1B14B70A00897084 /* Day */,
 				6298306A1B14B12600897084 /* Pilots */,
 			);
 			path = Modules;
@@ -388,12 +402,14 @@
 				627E7F8D1B0CD94100E77680 /* ActionTabBarController.swift in Sources */,
 				627E7F8A1B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift in Sources */,
 				624FBC931B0CBB7F00FADE9D /* AppDelegate.swift in Sources */,
+				629830721B14B88300897084 /* DayDailyViewController.swift in Sources */,
 				6298306D1B14B13E00897084 /* PilotTableViewCell.swift in Sources */,
 				62F4FD131B0CCEC60047D4E9 /* Favorite.swift in Sources */,
 				623A008F1B0D1423002F369F /* CompetitionPilotsViewController.swift in Sources */,
 				623A008D1B0D13C0002F369F /* PilotResult.swift in Sources */,
 				62F4FD081B0CC1C20047D4E9 /* Competition.swift in Sources */,
 				627E7F8F1B0CDB9600E77680 /* CompetitionClassesViewController.swift in Sources */,
+				629830701B14B83500897084 /* DayViewController.swift in Sources */,
 				62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */,
 				627E7F911B0CDC8500E77680 /* CompetitionClass.swift in Sources */,
 				62F4FD111B0CCE7B0047D4E9 /* Spoty.xcdatamodeld in Sources */,

@@ -19,6 +19,7 @@
 		627E7F8D1B0CD94100E77680 /* ActionTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F8C1B0CD94100E77680 /* ActionTabBarController.swift */; };
 		627E7F8F1B0CDB9600E77680 /* CompetitionClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F8E1B0CDB9600E77680 /* CompetitionClassesViewController.swift */; };
 		627E7F911B0CDC8500E77680 /* CompetitionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F901B0CDC8500E77680 /* CompetitionClass.swift */; };
+		629830671B14AADC00897084 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629830661B14AADC00897084 /* PilotViewController.swift */; };
 		62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */; };
 		62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */; };
 		62F4FCFF1B0CBEC80047D4E9 /* competitions-obgc2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */; };
@@ -50,6 +51,7 @@
 		627E7F8C1B0CD94100E77680 /* ActionTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTabBarController.swift; sourceTree = "<group>"; };
 		627E7F8E1B0CDB9600E77680 /* CompetitionClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionClassesViewController.swift; sourceTree = "<group>"; };
 		627E7F901B0CDC8500E77680 /* CompetitionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionClass.swift; sourceTree = "<group>"; };
+		629830661B14AADC00897084 /* PilotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
 		62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionSearchViewController.swift; sourceTree = "<group>"; };
 		62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
 		62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "competitions-obgc2015.json"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */,
 				623A008E1B0D1423002F369F /* CompetitionPilotsViewController.swift */,
 				62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */,
+				629830661B14AADC00897084 /* PilotViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				627E7F911B0CDC8500E77680 /* CompetitionClass.swift in Sources */,
 				62F4FD111B0CCE7B0047D4E9 /* Spoty.xcdatamodeld in Sources */,
 				62FD20861B0CE2B50044E59E /* CompetitionDaysViewController.swift in Sources */,
+				629830671B14AADC00897084 /* PilotViewController.swift in Sources */,
 				62F4FD051B0CC1910047D4E9 /* ServiceClient+Requests.swift in Sources */,
 				62FD20881B0CE34E0044E59E /* CompetitionDay.swift in Sources */,
 				62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */,

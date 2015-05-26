@@ -45,11 +45,10 @@ class CompetitionPilotsViewController: UITableViewController {
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if let controller = segue.destinationViewController as? CompetitionDaysViewController {
-//            let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
-//            controller.competition = competition
-//            controller.competitionClass = competition.classes![indexPath.row]
-//        }
+        if let controller = segue.destinationViewController as? PilotViewController {
+            let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
+            controller.pilot = pilots?[indexPath.row]
+        }
     }
     
 }

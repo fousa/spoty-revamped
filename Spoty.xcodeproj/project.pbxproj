@@ -21,6 +21,7 @@
 		627E7F911B0CDC8500E77680 /* CompetitionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E7F901B0CDC8500E77680 /* CompetitionClass.swift */; };
 		629830671B14AADC00897084 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629830661B14AADC00897084 /* PilotViewController.swift */; };
 		629830691B14AD9E00897084 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629830681B14AD9E00897084 /* Macros.swift */; };
+		6298306D1B14B13E00897084 /* PilotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298306C1B14B13E00897084 /* PilotTableViewCell.swift */; };
 		62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */; };
 		62F4FCF81B0CBDF80047D4E9 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */; };
 		62F4FCFF1B0CBEC80047D4E9 /* competitions-obgc2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */; };
@@ -54,6 +55,7 @@
 		627E7F901B0CDC8500E77680 /* CompetitionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionClass.swift; sourceTree = "<group>"; };
 		629830661B14AADC00897084 /* PilotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
 		629830681B14AD9E00897084 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		6298306C1B14B13E00897084 /* PilotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotTableViewCell.swift; sourceTree = "<group>"; };
 		62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionSearchViewController.swift; sourceTree = "<group>"; };
 		62F4FCF71B0CBDF80047D4E9 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
 		62F4FCFA1B0CBEC80047D4E9 /* competitions-obgc2015.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "competitions-obgc2015.json"; sourceTree = "<group>"; };
@@ -145,6 +147,24 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		6298306A1B14B12600897084 /* Pilots */ = {
+			isa = PBXGroup;
+			children = (
+				6298306B1B14B13100897084 /* Views */,
+				623A008E1B0D1423002F369F /* CompetitionPilotsViewController.swift */,
+				629830661B14AADC00897084 /* PilotViewController.swift */,
+			);
+			name = Pilots;
+			sourceTree = "<group>";
+		};
+		6298306B1B14B13100897084 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6298306C1B14B13E00897084 /* PilotTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		62F4FCF21B0CBCCF0047D4E9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,9 +192,8 @@
 				627E7F8E1B0CDB9600E77680 /* CompetitionClassesViewController.swift */,
 				62FD20851B0CE2B50044E59E /* CompetitionDaysViewController.swift */,
 				627E7F891B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift */,
-				623A008E1B0D1423002F369F /* CompetitionPilotsViewController.swift */,
 				62F4FCF51B0CBDC80047D4E9 /* CompetitionSearchViewController.swift */,
-				629830661B14AADC00897084 /* PilotViewController.swift */,
+				6298306A1B14B12600897084 /* Pilots */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -369,6 +388,7 @@
 				627E7F8D1B0CD94100E77680 /* ActionTabBarController.swift in Sources */,
 				627E7F8A1B0CD2EF00E77680 /* CompetitionFavoritesViewController.swift in Sources */,
 				624FBC931B0CBB7F00FADE9D /* AppDelegate.swift in Sources */,
+				6298306D1B14B13E00897084 /* PilotTableViewCell.swift in Sources */,
 				62F4FD131B0CCEC60047D4E9 /* Favorite.swift in Sources */,
 				623A008F1B0D1423002F369F /* CompetitionPilotsViewController.swift in Sources */,
 				623A008D1B0D13C0002F369F /* PilotResult.swift in Sources */,

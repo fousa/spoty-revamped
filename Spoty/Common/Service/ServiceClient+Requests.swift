@@ -70,7 +70,7 @@ extension ServiceClient {
                                 let result = PilotResult(day: key, points: value)
                                 pilot.results?.append(result)
                             }
-                            sort(&pilot.results!) { $0.day < $1.day }
+                            sort(&pilot.results!) { $0 < $1 }
                         }
                         sort(&pilots!) { $0 < $1 }
                         pilots?.append(pilot)

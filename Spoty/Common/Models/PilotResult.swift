@@ -23,3 +23,23 @@ class PilotResult {
     }
     
 }
+
+func <=(lhs: PilotResult, rhs: PilotResult) -> Bool {
+    return (lhs.day as NSString).integerValue <= (rhs.day as NSString).integerValue
+}
+
+func >=(lhs: PilotResult, rhs: PilotResult) -> Bool {
+    return (lhs.day as NSString).integerValue >= (rhs.day as NSString).integerValue
+}
+
+func >(lhs: PilotResult, rhs: PilotResult) -> Bool {
+    return (lhs.day as NSString).integerValue > (rhs.day as NSString).integerValue
+}
+
+func <(lhs: PilotResult, rhs: PilotResult) -> Bool {
+    return (lhs.day as NSString).integerValue < (rhs.day as NSString).integerValue
+}
+
+func ==(lhs: PilotResult, rhs: PilotResult) -> Bool {
+    return (lhs.day as NSString).integerValue == (rhs.day as NSString).integerValue
+}

@@ -63,7 +63,8 @@ extension CompetitionPilotsViewController: UITableViewDataSource {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         let pilot = pilots?[indexPath.row]
-        cell.textLabel?.text = pilot?.name
+        let cn = pilot!.cn == nil ? "" : "\(pilot!.cn!) "
+        cell.textLabel?.text = "\(cn)\(pilot!.name)"
         cell.detailTextLabel?.text = pilot?.glider
         return cell
     }

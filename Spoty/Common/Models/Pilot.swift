@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Pilot {
+class Pilot: Comparable {
     
     // MARK: - Properties
     
@@ -28,4 +28,24 @@ class Pilot {
         self.sortKey = sortKey
     }
     
+}
+
+func <=(lhs: Pilot, rhs: Pilot) -> Bool {
+    return (lhs.sortKey as NSString).integerValue <= (rhs.sortKey as NSString).integerValue
+}
+
+func >=(lhs: Pilot, rhs: Pilot) -> Bool {
+    return (lhs.sortKey as NSString).integerValue >= (rhs.sortKey as NSString).integerValue
+}
+
+func >(lhs: Pilot, rhs: Pilot) -> Bool {
+    return (lhs.sortKey as NSString).integerValue > (rhs.sortKey as NSString).integerValue
+}
+
+func <(lhs: Pilot, rhs: Pilot) -> Bool {
+    return (lhs.sortKey as NSString).integerValue < (rhs.sortKey as NSString).integerValue
+}
+
+func ==(lhs: Pilot, rhs: Pilot) -> Bool {
+    return (lhs.sortKey as NSString).integerValue == (rhs.sortKey as NSString).integerValue
 }

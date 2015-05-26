@@ -72,7 +72,7 @@ extension ServiceClient {
                             }
                             sort(&pilot.results!) { $0.day < $1.day }
                         }
-                        sort(&pilots!) { $0.sortKey < $1.sortKey }
+                        sort(&pilots!) { $0 < $1 }
                         pilots?.append(pilot)
                     }
             }

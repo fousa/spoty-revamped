@@ -14,8 +14,8 @@ class ServiceClient: NSObject {
     
     // MARK: - Globals
     
-    private let baseURL = NSURL(string: "http://spoty-api.herokuapp.com/api")
     private let useDummy = true
+    private let baseURL = NSURL(string: "http://soaringspot.fousa.be/api")
     
     // MARK: - Properties
     

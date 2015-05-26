@@ -14,8 +14,8 @@ class ServiceClient: NSObject {
     
     // MARK: - Globals
     
-    private let useDummy = true
     private let baseURL = NSURL(string: "http://soaringspot.fousa.be/api")
+    private let useDummy = false
     
     // MARK: - Properties
     
@@ -38,20 +38,25 @@ class ServiceClient: NSObject {
         if let data = NSData(contentsOfFile: path) {
             parsedData = NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil)
         }
-        completion(response: parsedData, error: nil)
+        dispatch_async(dispatch_get_main_queue()) {
+            completion(response: parsedData, error: nil)
+        }
     }
     
     private func performRemoteFetch(#URLString: String, completion: ServiceClientCompletion) {
-        let url = NSURL(string: "competitions", relativeToURL: baseURL)!
-        let request = NSURLRequest(URL: url, cachePolicy: .ReloadIgnoringLocalCacheData, timeoutInterval: 30.0)
+        let url = baseURL?.URLByAppendingPathComponent(URLString)
+        let request = NSURLRequest(URL: url!, cachePolicy: .ReloadIgnoringLocalCacheData, timeoutInterval: 30.0)
         session = NSURLSession(configuration: configuration)
-        session?.dataTaskWithRequest(request) { data, response, error in
+        let task = session?.dataTaskWithRequest(request) { data, response, error in
             var parsedData: AnyObject? = nil
             if let data = data {
                 parsedData = NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil)
             }
-            completion(response: parsedData, error: error)
+            dispatch_async(dispatch_get_main_queue()) {
+                completion(response: parsedData, error: error)
+            }
         }
+        task?.resume()
     }
     
     internal func performFetch(#URLString: String, completion: ServiceClientCompletion) {

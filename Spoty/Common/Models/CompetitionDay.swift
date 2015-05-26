@@ -8,22 +8,42 @@
 
 import Foundation
 
-class CompetitionDay {
+class CompetitionDay: Comparable {
     
     // MARK: - Properties
     
-    var key: String
+    var key: String?
     var name: String
     var date: String
     var sortKey: String
     
     // MARK: - Init
     
-    init(key: String, name: String, date: String, sortKey: String) {
+    init(key: String?, name: String, date: String, sortKey: String) {
         self.key = key
         self.name = name
         self.date = date
         self.sortKey = sortKey
     }
     
+}
+
+func <=(lhs: CompetitionDay, rhs: CompetitionDay) -> Bool {
+    return (lhs.sortKey as NSString).integerValue <= (rhs.sortKey as NSString).integerValue
+}
+
+func >=(lhs: CompetitionDay, rhs: CompetitionDay) -> Bool {
+    return (lhs.sortKey as NSString).integerValue >= (rhs.sortKey as NSString).integerValue
+}
+
+func >(lhs: CompetitionDay, rhs: CompetitionDay) -> Bool {
+    return (lhs.sortKey as NSString).integerValue > (rhs.sortKey as NSString).integerValue
+}
+
+func <(lhs: CompetitionDay, rhs: CompetitionDay) -> Bool {
+    return (lhs.sortKey as NSString).integerValue < (rhs.sortKey as NSString).integerValue
+}
+
+func ==(lhs: CompetitionDay, rhs: CompetitionDay) -> Bool {
+    return (lhs.sortKey as NSString).integerValue == (rhs.sortKey as NSString).integerValue
 }

@@ -14,6 +14,7 @@ class CompetitionDayResult {
     
     var sortKey: String
     var pilot: String
+    var points: String?
     
     // MARK: - Init
     

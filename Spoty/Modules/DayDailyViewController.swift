@@ -50,10 +50,9 @@ extension DayDailyViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! DayResultTableViewCell
         let result = competitionDay?.results?[indexPath.row]
-        cell.textLabel?.text = result?.sortKey
-        cell.detailTextLabel?.text = result?.pilot
+        cell.configure(competitionDayResult: result!)
         return cell
     }
     

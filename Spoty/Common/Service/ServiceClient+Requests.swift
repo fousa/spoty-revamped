@@ -61,6 +61,7 @@ extension ServiceClient {
                     results = [CompetitionDayResult]()
                     for rawResult in rawResults as! [[String:AnyObject]] {
                         var result = CompetitionDayResult(sortKey: (rawResult["#"] as! NSNumber).stringValue, pilot: rawResult["pilot"] as! String)
+                        result.points = rawResult["points"] as? String
                         results?.append(result)
                     }
                     sort(&results!) { $0 < $1 }

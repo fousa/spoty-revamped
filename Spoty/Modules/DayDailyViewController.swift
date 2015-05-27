@@ -16,10 +16,29 @@ class DayDailyViewController: UIViewController {
     
     var competitionDay: CompetitionDay?
     
+    private var refreshControl: UIRefreshControl!
+    
+    // MARK: - View flow
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refreshData", forControlEvents: .ValueChanged)
+        tableView.addSubview(refreshControl)
+    }
+    
     // MARK: - Reload
     
     func reloadData() {
         tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
+    
+    func refreshData() {
+        if let controller = tabBarController as? DayViewController {
+            controller.reloadData()
+        }
     }
     
 }

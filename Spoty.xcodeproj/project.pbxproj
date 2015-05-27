@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		025E887B951CAA0B5EA4AC07 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4075C5215B2DCE45A16E110 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		622910431B15CCB400B94AE0 /* CompetitionDayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622910421B15CCB400B94AE0 /* CompetitionDayResult.swift */; };
 		623A008B1B0D1353002F369F /* Pilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A008A1B0D1353002F369F /* Pilot.swift */; };
 		623A008D1B0D13C0002F369F /* PilotResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A008C1B0D13C0002F369F /* PilotResult.swift */; };
 		623A008F1B0D1423002F369F /* CompetitionPilotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A008E1B0D1423002F369F /* CompetitionPilotsViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		1A5BDF022925689B52BA4631 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		622910421B15CCB400B94AE0 /* CompetitionDayResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionDayResult.swift; sourceTree = "<group>"; };
 		623A008A1B0D1353002F369F /* Pilot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pilot.swift; sourceTree = "<group>"; };
 		623A008C1B0D13C0002F369F /* PilotResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotResult.swift; sourceTree = "<group>"; };
 		623A008E1B0D1423002F369F /* CompetitionPilotsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionPilotsViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				62F4FD071B0CC1C20047D4E9 /* Competition.swift */,
 				627E7F901B0CDC8500E77680 /* CompetitionClass.swift */,
 				62FD20871B0CE34E0044E59E /* CompetitionDay.swift */,
+				622910421B15CCB400B94AE0 /* CompetitionDayResult.swift */,
 				62F4FD121B0CCEC60047D4E9 /* Favorite.swift */,
 				623A008A1B0D1353002F369F /* Pilot.swift */,
 				623A008C1B0D13C0002F369F /* PilotResult.swift */,
@@ -416,6 +419,7 @@
 				62FD20861B0CE2B50044E59E /* CompetitionDaysViewController.swift in Sources */,
 				629830671B14AADC00897084 /* PilotViewController.swift in Sources */,
 				62F4FD051B0CC1910047D4E9 /* ServiceClient+Requests.swift in Sources */,
+				622910431B15CCB400B94AE0 /* CompetitionDayResult.swift in Sources */,
 				62FD20881B0CE34E0044E59E /* CompetitionDay.swift in Sources */,
 				62F4FCF61B0CBDC80047D4E9 /* CompetitionSearchViewController.swift in Sources */,
 			);

@@ -8,9 +8,11 @@
 
 import UIKit
 
-class DayDailyViewController: UITableViewController {
+class DayDailyViewController: UIViewController {
     
     // MARK: - Properties
+    
+    @IBOutlet var tableView: UITableView!
     
     var competitionDay: CompetitionDay?
     
@@ -24,11 +26,11 @@ class DayDailyViewController: UITableViewController {
 
 extension DayDailyViewController: UITableViewDataSource {
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return competitionDay?.results?.count ?? 0
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         let result = competitionDay?.results?[indexPath.row]
         cell.textLabel?.text = result?.sortKey

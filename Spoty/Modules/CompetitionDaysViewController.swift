@@ -49,7 +49,9 @@ class CompetitionDaysViewController: UITableViewController {
             enabledLandscape()
         } else if let navigationController = segue.destinationViewController as? UINavigationController, let controller = navigationController.topViewController as? DayViewController {
             let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
-            controller.day = competitionClass.days![indexPath.row]
+            controller.competitionDay = competitionClass.days![indexPath.row]
+            controller.competition = competition
+            controller.competitionClass = competitionClass
             enabledLandscape()
         }
     }

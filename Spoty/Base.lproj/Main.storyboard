@@ -240,7 +240,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="f6V-GT-dcm" kind="relationship" relationship="viewControllers" id="iyN-eo-KLa"/>
+                        <segue destination="2wD-ae-be4" kind="relationship" relationship="viewControllers" id="3Da-T3-lN9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTB-GJ-SEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -458,26 +458,87 @@
             <point key="canvasLocation" x="4941" y="-337"/>
         </scene>
         <!--Daily Score-->
-        <scene sceneID="Aja-oO-Bny">
+        <scene sceneID="uII-Rd-mCv">
             <objects>
-                <tableViewController id="f6V-GT-dcm" customClass="DayDailyViewController" customModule="Spoty" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ogP-9D-JPH">
+                <viewController id="2wD-ae-be4" customClass="DayDailyViewController" customModule="Spoty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pp3-Rx-nQA"/>
+                        <viewControllerLayoutGuide type="bottom" id="0gA-Ch-vuh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ptN-gi-tB3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eGS-R1-yNb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="9Eh-Rf-EMj" customClass="DayResultTableViewCell" customModule="Spoty" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Eh-Rf-EMj" id="bzs-Nt-VFc">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSp-J5-Iej">
+                                                    <rect key="frame" x="60" y="24" width="26.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3M-m0-Hyl">
+                                                    <rect key="frame" x="20" y="24" width="32" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <color key="textColor" red="0.373" green="0.64800000000000002" blue="0.217" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDp-z4-8Oj">
+                                                    <rect key="frame" x="535" y="24" width="32" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <color key="textColor" red="0.373" green="0.64800000000000002" blue="0.217" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U3M-m0-Hyl" firstAttribute="centerY" secondItem="OSp-J5-Iej" secondAttribute="centerY" id="7Th-zt-WRr"/>
+                                                <constraint firstItem="OSp-J5-Iej" firstAttribute="leading" secondItem="bzs-Nt-VFc" secondAttribute="leading" constant="60" id="9aL-G1-peK"/>
+                                                <constraint firstAttribute="centerY" secondItem="U3M-m0-Hyl" secondAttribute="centerY" constant="-4" id="SIg-DH-JCk"/>
+                                                <constraint firstAttribute="trailing" secondItem="UDp-z4-8Oj" secondAttribute="trailing" id="lIs-fF-nhZ"/>
+                                                <constraint firstItem="U3M-m0-Hyl" firstAttribute="leading" secondItem="bzs-Nt-VFc" secondAttribute="leading" constant="20" id="vuV-5V-ZNp"/>
+                                                <constraint firstItem="UDp-z4-8Oj" firstAttribute="centerY" secondItem="OSp-J5-Iej" secondAttribute="centerY" id="z9D-bQ-e6q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="OSp-J5-Iej" id="ggm-5z-M8K"/>
+                                            <outlet property="placeLabel" destination="U3M-m0-Hyl" id="tdY-8x-Sbp"/>
+                                            <outlet property="pointsLabel" destination="UDp-z4-8Oj" id="VHs-Ek-2tb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2wD-ae-be4" id="pfC-bg-uUc"/>
+                                    <outlet property="delegate" destination="2wD-ae-be4" id="Qlt-r6-OIn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="f6V-GT-dcm" id="DTP-kG-WF7"/>
-                            <outlet property="delegate" destination="f6V-GT-dcm" id="hAU-jh-E4v"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Daily Score" id="tFk-Ar-4Ap"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UwQ-kR-y0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eGS-R1-yNb" secondAttribute="trailing" id="CJm-ff-qYr"/>
+                            <constraint firstItem="eGS-R1-yNb" firstAttribute="top" secondItem="ptN-gi-tB3" secondAttribute="top" id="NkH-hw-86M"/>
+                            <constraint firstItem="eGS-R1-yNb" firstAttribute="leading" secondItem="ptN-gi-tB3" secondAttribute="leading" id="nUb-Yl-oog"/>
+                            <constraint firstItem="0gA-Ch-vuh" firstAttribute="top" secondItem="eGS-R1-yNb" secondAttribute="bottom" id="ygA-ck-5DN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Daily Score" id="jpn-ZY-zE4"/>
+                    <connections>
+                        <outlet property="tableView" destination="eGS-R1-yNb" id="08Q-ei-Aag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMu-md-LQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4941" y="336"/>
+            <point key="canvasLocation" x="4941" y="329"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hHH-hl-J8j"/>
+        <segue reference="sYk-zh-H5e"/>
     </inferredMetricsTieBreakers>
 </document>

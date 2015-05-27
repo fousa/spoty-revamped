@@ -51,6 +51,27 @@ extension ServiceClient {
         }
     }
     
+    // MARK: - Days
+    
+    func fetchDay(competition: Competition, competitionClass: CompetitionClass, competitionDay: CompetitionDay, completion: ServiceClientCompletion) {
+        performFetch(URLString: "competitions/\(competition.key)/classes/\(competitionClass.key)/days/\(competitionDay.key!)") { response, error in
+            var results: [CompetitionDayResult]?
+            if let rawDay: AnyObject = (response as? [String:AnyObject])?["day"] {
+                if let rawResults: AnyObject = rawDay["daily"] {
+                    results = [CompetitionDayResult]()
+                    for rawResult in rawResults as! [[String:AnyObject]] {
+                        var result = CompetitionDayResult(sortKey: (rawResult["#"] as! NSNumber).stringValue, pilot: rawResult["pilot"] as! String)
+                        result.points = rawResult["points"] as? String
+                        results?.append(result)
+                    }
+                    sort(&results!) { $0 < $1 }
+                }
+            }
+            competitionDay.results = results
+            completion(response: competitionDay, error: error)
+        }
+    }
+    
     // MARK: - Pilots
     
     func fetchPilots(competition: Competition, competitionClass: CompetitionClass, completion: ServiceClientCompletion) {
